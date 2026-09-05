@@ -99,7 +99,7 @@ This analysis highlights the power of SQL for **business intelligence and decisi
 Developed by **Irfan Shaik**  
 Focus: SQL Analytics, Window Functions, and Retail Data Insights  
 
-🔗 [Github Profile]((https://github.com/Shaik-Irfan02))
+🔗 [Github Profile](https://github.com/Shaik-Irfan02)
 🔗 [LinkedIn Profile](https://www.linkedin.com/in/shaik-irfan02)
 
 
