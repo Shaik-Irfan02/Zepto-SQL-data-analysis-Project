@@ -20,8 +20,9 @@ CREATE TABLE zepto (
     outOfStock BOOLEAN,
     quantity INTEGER
 );
+```
+## 🔍 Key Highlights
 
-#🔍 Key Highlights
 Data Cleaning: Removed invalid rows, converted paise to rupees.
 
 Exploration: Row counts, null checks, distinct categories, stock status.
@@ -46,10 +47,11 @@ Inventory weight distribution.
 
 Price per gram for value comparison.
 
-#📈 Example Query
+## 📈 Example Query
+
 Top 5 products per category by discount:
 
-sql
+```sql
 SELECT category, name, discountPercent
 FROM (
     SELECT category, name, discountPercent,
@@ -60,12 +62,28 @@ FROM (
 ) ranked
 WHERE rn <= 5;
 
-#🚀 Insights
+```
+## 🚀 Insights
+
 Window functions enable ranking, cumulative totals, and comparisons without collapsing rows.
 
 PARTITION BY resets calculations per category, making category‑wise analysis possible.
 
 The dataset highlights best‑value products, stock trends, and discount contributions across categories.
+
+## 🏁 Conclusion
+
+Through this project, the `zepto` dataset was successfully explored, cleaned, and analyzed using SQL.  
+By leveraging **Window Functions** (`ROW_NUMBER`, `RANK`, `DENSE_RANK`, `SUM`, `MAX`) and **PARTITION BY**, we were able to:
+
+- Identify top products overall and within each category.
+- Rank items by discount percentage and highlight the highest discounted products.
+- Calculate cumulative stock availability and inventory weight.
+- Measure the percentage contribution of each product’s discount to its category.
+- Derive meaningful insights into pricing, stock trends, and category performance.
+
+This analysis demonstrates how SQL can be used not only for basic queries but also for **advanced analytics** that provide actionable business insights.  
+The project serves as a practical example of applying SQL window functions in real-world retail datasets.
 
 #👨‍💻 Author
 Developed by Irfan Shaik
@@ -75,3 +93,6 @@ Focus: SQL Analytics, Window Functions, and Retail Data Insights
 This version is short, professional, and GitHub‑ready. It gives a clear **description**, schema, highlights, one example query, and insights — all in one summary.  
 
 Would you like me to also add a **project workflow diagram** (data cleaning → exploration → analysis → insights) so your README looks more visually engaging?
+
+
+
