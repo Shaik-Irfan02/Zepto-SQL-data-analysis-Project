@@ -21,7 +21,7 @@ CREATE TABLE zepto (
     quantity INTEGER
 );
 
-🔍 Key Highlights
+#🔍 Key Highlights
 Data Cleaning: Removed invalid rows, converted paise to rupees.
 
 Exploration: Row counts, null checks, distinct categories, stock status.
@@ -46,7 +46,7 @@ Inventory weight distribution.
 
 Price per gram for value comparison.
 
-📈 Example Query
+#📈 Example Query
 Top 5 products per category by discount:
 
 sql
@@ -60,14 +60,14 @@ FROM (
 ) ranked
 WHERE rn <= 5;
 
-🚀 Insights
+#🚀 Insights
 Window functions enable ranking, cumulative totals, and comparisons without collapsing rows.
 
 PARTITION BY resets calculations per category, making category‑wise analysis possible.
 
 The dataset highlights best‑value products, stock trends, and discount contributions across categories.
 
-👨‍💻 Author
+#👨‍💻 Author
 Developed by Irfan Shaik
 Focus: SQL Analytics, Window Functions, and Retail Data Insights
 
